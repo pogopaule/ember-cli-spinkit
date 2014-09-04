@@ -6,7 +6,9 @@ var $ = require('cheerio'),
 
   fileOptions = {
     encoding: 'utf8'
-  };
+  },
+  stylesFolder = '../styles-addon/components/',
+  templatesFolder = '../templates-addon/components/';;
 
 createFolders();
 
@@ -28,12 +30,12 @@ function isHTML(file) {
 }
 
 function save(css, html, name) {
-  fs.writeFile('../app/styles/components/' + name + '.css', css, fileOptions, function(error) {
-    if (error) {
-      throw error
-    }
-  });
-  fs.writeFile('../app/templates/components/' + name + '.hbs', html, fileOptions, function(error) {
+  writeFile(stylesFolder, name, '.css', css);
+  writeFile(templatesFolder, name, '.hbs', html);
+}
+
+function writeFile(folder, fileName, extension, content) {
+  fs.writeFile(folder + fileName + extension, content, fileOptions, function(error) {
     if (error) {
       throw error
     }
@@ -48,13 +50,13 @@ function getComponentName(filePath) {
 };
 
 function createFolders() {
-  mkdir('../app/styles/components', function(error) {
+  mkdir(stylesFolder, function(error) {
     if (error) {
       throw error;
     }
   });
 
-  mkdir('../app/templates/components', function(error) {
+  mkdir(templatesFolder, function(error) {
     if (error) {
       throw error;
     }
