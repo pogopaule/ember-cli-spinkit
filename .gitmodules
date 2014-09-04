@@ -1,0 +1,3 @@
+[submodule "dev/SpinKit"]
+	path = dev/SpinKit
+	url = https://github.com/tobiasahlin/SpinKit.git
