@@ -22,5 +22,8 @@
     "main": "index.js"
   },
   "author": "pogopaule",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "cheerio": "^0.17.0"
+  }
 }
