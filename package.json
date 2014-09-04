@@ -1,0 +1,26 @@
+{
+  "name": "ember-cli-spinkit",
+  "version": "0.0.1",
+  "description": "makes all spinkit spinners available as components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://www.github.com/pogopaule/ember-cli-spinkit.git"
+  },
+  "bugs": {
+    "url": "http://www.github.com/pogopaule/ember-cli-spinkit/issues"
+  },
+  "homepage": "http://www.github.com/pogopaule/ember-cli-spinkit",
+  "keywords": [
+    "SpinKit",
+    "ember-addon"
+  ],
+  "ember-addon": {
+    "main": "index.js"
+  },
+  "author": "pogopaule",
+  "license": "MIT"
+}
