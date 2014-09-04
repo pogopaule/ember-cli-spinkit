@@ -24,6 +24,8 @@
   "author": "pogopaule",
   "license": "MIT",
   "devDependencies": {
-    "cheerio": "^0.17.0"
+    "cheerio": "^0.17.0",
+    "findit": "^2.0.0",
+    "mkdirp": "^0.5.0"
   }
 }
