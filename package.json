@@ -15,17 +15,19 @@
   },
   "homepage": "http://www.github.com/pogopaule/ember-cli-spinkit",
   "keywords": [
-    "SpinKit",
-    "ember-addon"
+    "ember-addon",
+    "spinkit"
   ],
   "ember-addon": {
-    "main": "index.js"
+    "main": "index"
   },
   "author": "pogopaule",
   "license": "MIT",
   "devDependencies": {
     "cheerio": "^0.17.0",
+    "css": "^2.1.0",
     "findit": "^2.0.0",
-    "mkdirp": "^0.5.0"
+    "mkdirp": "^0.5.0",
+    "underscore": "^1.7.0"
   }
 }
