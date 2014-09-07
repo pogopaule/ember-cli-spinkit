@@ -6,7 +6,7 @@ function EmberCLISpinKit(project) {
   this.name = 'ember-cli-spinkit';
 }
 
-EmberCLISpinKit.prototype.treeFor = function treeFor(name) {
+EmberCLISpinKit.prototype.treeFor = function(name) {
   var treePath = path.join('node_modules', 'ember-cli-spinkit', 'trees', name);
   if (fs.existsSync(treePath)) {
     return unwatchedTree(treePath);
