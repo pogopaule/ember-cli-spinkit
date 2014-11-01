@@ -1,6 +1,26 @@
-function EmberCLISpinKit(project) {
-  this.project = project;
-  this.name = 'ember-cli-spinkit';
-}
+var path = require('path');
+var fs   = require('fs');
 
-module.exports = EmberCLISpinKit;
+module.exports = {
+  name: 'ember-cli-spinkit',
+  blueprintsPath: function() {
+    return __dirname + '/blueprints';
+  },
+  included: function(app) {
+    app.import('vendor/ember-cli-spinkit/styles/spinkit-spinner.css');
+  },
+  treeFor: function(name) {
+    if(name === 'templates') {
+      var treePath = path.join('vendor', 'ember-cli-spinkit', 'templates');
+      if (fs.existsSync(treePath)) {
+        return unwatchedTree(treePath);
+      }
+    }
+  },
+  unwatchedTree: function(dir) {
+    return {
+      read: function() { return dir; },
+      cleanup: function() { }
+    };
+  }
+};
