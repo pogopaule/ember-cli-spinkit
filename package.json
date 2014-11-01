@@ -16,7 +16,8 @@
   "homepage": "http://www.github.com/pogopaule/ember-cli-spinkit",
   "keywords": [
     "ember-addon",
-    "spinkit"
+    "spinkit",
+    "spinner"
   ],
   "ember-addon": {
     "main": "index"
