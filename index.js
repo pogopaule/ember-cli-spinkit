@@ -13,7 +13,7 @@ module.exports = {
     if(name === 'templates') {
       var treePath = path.join('vendor', 'ember-cli-spinkit', 'templates');
       if (fs.existsSync(treePath)) {
-        return unwatchedTree(treePath);
+        return this.unwatchedTree(treePath);
       }
     }
   },
