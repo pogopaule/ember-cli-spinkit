@@ -1,6 +1,6 @@
 # ember-cli-spinkit
 
-Add a [SpinKit](https://github.com/tobiasahlin/SpinKit) spinner to your ember-cli project
+Add a [SpinKit](https://github.com/tobiasahlin/SpinKit) loading spinner to your ember-cli project
 
 ## Install ##
 

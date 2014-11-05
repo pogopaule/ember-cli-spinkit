@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-spinkit",
   "version": "0.0.3",
-  "description": "Add SpinKit spinners to your ember-cli project",
+  "description": "Add a SpinKit loading spinner to your ember-cli project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,7 +17,8 @@
   "keywords": [
     "ember-addon",
     "spinkit",
-    "spinner"
+    "spinner",
+    "loading"
   ],
   "ember-addon": {
     "main": "index"
