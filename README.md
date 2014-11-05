@@ -1,23 +1,23 @@
 # ember-cli-spinkit
 
-Add [SpinKit](https://github.com/tobiasahlin/SpinKit) spinners to your ember-cli project
+Add a [SpinKit](https://github.com/tobiasahlin/SpinKit) spinner to your ember-cli project
 
 ## Install ##
 
-``bash
+```bash
 npm install ember-cli-spinkit --save-dev
-``
+```
 
 ## Usage ##
 
-``bash
+```bash
 ember generate spinkit-<name of spinner>
-``
+```
 
 For example:
-``bash
+```bash
 ember generate spinkit-double-bounce
-``
+```
 Available Spinners [(Demo)](https://github.com/tobiasahlin/SpinKit)
 - rotating-plane
 - fading-circle
@@ -33,14 +33,14 @@ Available Spinners [(Demo)](https://github.com/tobiasahlin/SpinKit)
 
 In your template, presumably `loading.hbs` include the spinner by adding
 
-``handlebars
+```handlebars
 {{spinkit-spinner}}
-``
+```
 
 ## Color ##
 
 By default the spinner color is `#333`.
 
-Check the [SpinKit project](https://github.com/tobiasahlin/SpinKit) or use your browser's inspector to see which CSS classes you should override.
+Check the [SpinKit project](https://github.com/tobiasahlin/SpinKit) or use your browser's inspector to see which CSS classes you should overwrite.
 
-Alternatively, change the color directly in `vendor/ember-cli-spinkit/styles/spinkit-spinner.css`
+Alternatively, change the color directly in `vendor/ember-cli-spinkit/styles/spinkit-spinner.css`.
