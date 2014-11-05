@@ -31,7 +31,7 @@ Available Spinners [(Demo)](http://tobiasahlin.com/spinkit/)
 - cube-grid
 - wordpress
 
-In your template, presumably `loading.hbs`, include the spinner by adding
+In your template, presumably your [loading.hbs](http://emberjs.com/guides/routing/loading-and-error-substates/), include the spinner by adding
 
 ```handlebars
 {{spinkit-spinner}}
