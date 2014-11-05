@@ -18,7 +18,7 @@ For example:
 ```bash
 ember generate spinkit-double-bounce
 ```
-Available Spinners [(Demo)](https://github.com/tobiasahlin/SpinKit)
+Available Spinners [(Demo)](http://tobiasahlin.com/spinkit/)
 - rotating-plane
 - fading-circle
 - double-bounce
@@ -31,7 +31,7 @@ Available Spinners [(Demo)](https://github.com/tobiasahlin/SpinKit)
 - cube-grid
 - wordpress
 
-In your template, presumably `loading.hbs` include the spinner by adding
+In your template, presumably `loading.hbs`, include the spinner by adding
 
 ```handlebars
 {{spinkit-spinner}}
@@ -43,4 +43,4 @@ By default the spinner color is `#333`.
 
 Check the [SpinKit project](https://github.com/tobiasahlin/SpinKit) or use your browser's inspector to see which CSS classes you should overwrite.
 
-Alternatively, change the color directly in `vendor/ember-cli-spinkit/styles/spinkit-spinner.css`.
+Alternatively, change the color directly in the generated file `vendor/ember-cli-spinkit/styles/spinkit-spinner.css`.
