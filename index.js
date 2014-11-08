@@ -1,5 +1,6 @@
 var path = require('path');
 var fs   = require('fs');
+var chalk = require('chalk');
 
 module.exports = {
   name: 'ember-cli-spinkit',
@@ -7,7 +8,12 @@ module.exports = {
     return __dirname + '/blueprints';
   },
   included: function(app) {
-    app.import('vendor/ember-cli-spinkit/styles/spinkit-spinner.css');
+    var cssPath = 'vendor/ember-cli-spinkit/styles/spinkit-spinner.css';
+    if(fs.existsSync(cssPath)) {
+      app.import(cssPath);
+    } else {
+      console.warn(chalk.yellow("You have installed ember-cli-spinkit but you didn't run 'ember generate spinkit-<name of spinner>' yet. See https://github.com/pogopaule/ember-cli-spinkit for more information."));
+    }
   },
   treeFor: function(name) {
     if(name === 'templates') {
