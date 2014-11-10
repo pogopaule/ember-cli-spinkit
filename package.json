@@ -28,7 +28,6 @@
     "body-parser": "^1.2.0",
     "broccoli-asset-rev": "0.3.1",
     "broccoli-ember-hbs-template-compiler": "^1.6.1",
-    "chalk": "^0.5.1",
     "cheerio": "^0.17.0",
     "css": "^2.1.0",
     "ember-cli": "0.1.2",
@@ -43,6 +42,9 @@
     "glob": "^4.0.5",
     "mkdirp": "^0.5.0",
     "underscore": "^1.7.0"
+  },
+  "dependencies": {
+     "chalk": "^0.5.1"
   },
   "keywords": [
     "ember-addon",
