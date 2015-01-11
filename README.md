@@ -5,7 +5,7 @@ Add a [SpinKit](https://github.com/tobiasahlin/SpinKit) loading spinner to your 
 ## Install ##
 
 ```bash
-npm install ember-cli-spinkit --save-dev
+ember install:npm ember-cli-spinkit
 ```
 
 ## Usage ##

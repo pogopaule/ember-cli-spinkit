@@ -54,6 +54,7 @@
     "loading"
   ],
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "defaultBlueprint": "spinkit-three-bounce"
   }
 }

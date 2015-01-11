@@ -15,12 +15,10 @@ module.exports = {
       console.warn(chalk.yellow("You have installed ember-cli-spinkit but you didn't run 'ember generate spinkit-<name of spinner>' yet. See https://github.com/pogopaule/ember-cli-spinkit for more information."));
     }
   },
-  treeFor: function(name) {
-    if(name === 'templates') {
-      var treePath = path.join('vendor', 'ember-cli-spinkit', 'templates');
-      if (fs.existsSync(treePath)) {
-        return this.unwatchedTree(treePath);
-      }
+  treeForTemplates: function(name) {
+    var treePath = path.join('vendor', 'ember-cli-spinkit', 'templates');
+    if (fs.existsSync(treePath)) {
+      return this.unwatchedTree(treePath);
     }
   },
   unwatchedTree: function(dir) {
