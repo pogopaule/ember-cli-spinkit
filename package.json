@@ -45,7 +45,7 @@
     "underscore": "^1.7.0"
   },
   "dependencies": {
-     "chalk": "^0.5.1"
+     "chalk": "^1.0.0"
   },
   "keywords": [
     "ember-addon",
