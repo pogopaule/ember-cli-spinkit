@@ -1,5 +1,5 @@
 import Ember from "ember";
-import { test } from 'ember-qunit';
+import { test, module } from 'qunit';
 import startApp from '../helpers/start-app';
 var App;
 
@@ -12,9 +12,9 @@ module('SpinKit spinner test', {
   }
 });
 
-test('A SpinKit spinner should be present', function() {
-  expect(1);
+test('A SpinKit spinner should be present', function(assert) {
+  assert.expect(1);
 
   visit('/');
-  equal(find('.spinner').length, 1, 'expected to find element with class spinner');
+  assert.equal(find('.spinner').length, 1, 'expected to find element with class spinner');
 });

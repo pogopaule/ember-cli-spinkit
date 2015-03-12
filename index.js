@@ -1,3 +1,6 @@
+/* jshint node: true */
+'use strict';
+
 var path = require('path');
 var fs   = require('fs');
 var chalk = require('chalk');
