@@ -10,3 +10,10 @@ tests/
 bower.json
 Brocfile.js
 testem.json
+
+.DS_Store
+.gitmodules
+.jshintrc
+dev/
+dist/
+tmp/
