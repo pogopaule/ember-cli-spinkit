@@ -1,55 +1,61 @@
 
-    .spinner {
-      margin: 100px auto;
-      width: 40px;
-      height: 40px;
-      position: relative;
-      text-align: center;
-      
-      -webkit-animation: rotate 2.0s infinite linear;
-      animation: rotate 2.0s infinite linear;
-    }
+    /*
+ *  Usage:
+ *
+      <div class="sk-chasing-dots">
+        <div class="sk-child sk-dot1"></div>
+        <div class="sk-child sk-dot2"></div>
+      </div>
+ *
+ */
+.sk-chasing-dots {
+  margin: 40px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  -webkit-animation: sk-chasingDotsRotate 2s infinite linear;
+          animation: sk-chasingDotsRotate 2s infinite linear; }
+  .sk-chasing-dots .sk-child {
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background-color: #333;
+    border-radius: 100%;
+    -webkit-animation: sk-chasingDotsBounce 2s infinite ease-in-out;
+            animation: sk-chasingDotsBounce 2s infinite ease-in-out; }
+  .sk-chasing-dots .sk-dot2 {
+    top: auto;
+    bottom: 0;
+    -webkit-animation-delay: -1s;
+            animation-delay: -1s; }
 
-    .dot1, .dot2 {
-      width: 60%;
-      height: 60%;
-      display: inline-block;
-      position: absolute;
-      top: 0;
-      background-color: #333;
-      border-radius: 100%;
-      
-      -webkit-animation: bounce 2.0s infinite ease-in-out;
-      animation: bounce 2.0s infinite ease-in-out;
-    }
+@-webkit-keyframes sk-chasingDotsRotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
 
-    .dot2 {
-      top: auto;
-      bottom: 0px;
-      -webkit-animation-delay: -1.0s;
-      animation-delay: -1.0s;
-    }
+@keyframes sk-chasingDotsRotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
 
-    @-webkit-keyframes rotate { 100% { -webkit-transform: rotate(360deg) }}
-    @keyframes rotate { 
-      100% {
-        transform: rotate(360deg);
-        -webkit-transform: rotate(360deg);
-      }
-    }
+@-webkit-keyframes sk-chasingDotsBounce {
+  0%, 100% {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
 
-    @-webkit-keyframes bounce {
-      0%, 100% { -webkit-transform: scale(0.0) }
-      50% { -webkit-transform: scale(1.0) }
-    }
+@keyframes sk-chasingDotsBounce {
+  0%, 100% {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
 
-    @keyframes bounce {
-      0%, 100% {
-        transform: scale(0.0);
-        -webkit-transform: scale(0.0);
-      } 50% {
-        transform: scale(1.0);
-        -webkit-transform: scale(1.0);
-      }
-    }
-    
+  

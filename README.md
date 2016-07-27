@@ -21,6 +21,7 @@ ember generate spinkit-double-bounce
 Available Spinners [(Demo)](http://tobiasahlin.com/spinkit/)
 - rotating-plane
 - fading-circle
+- folding-cube
 - double-bounce
 - wave
 - wandering-cubes
@@ -29,7 +30,6 @@ Available Spinners [(Demo)](http://tobiasahlin.com/spinkit/)
 - three-bounce
 - circle
 - cube-grid
-- wordpress
 
 In your template, presumably your [loading.hbs](http://emberjs.com/guides/routing/loading-and-error-substates/), include the spinner by adding
 
