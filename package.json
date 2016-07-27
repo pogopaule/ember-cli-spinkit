@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-spinkit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Add a SpinKit loading spinner to your ember-cli project",
   "directories": {
     "doc": "doc",
