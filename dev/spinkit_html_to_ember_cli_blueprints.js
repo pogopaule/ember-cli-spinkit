@@ -11,7 +11,7 @@ var $ = require('cheerio'),
   };
 
 
-var finder = find('./SpinKit/');
+var finder = find('./SpinKit/examples/');
 
 finder.on('file', function(filePath, stat) {
   if (isHTML(filePath)) {
