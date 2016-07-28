@@ -13,7 +13,7 @@ var $ = require('cheerio'),
 
 var finder = find('./SpinKit/examples/');
 
-finder.on('file', function(filePath, stat) {
+finder.on('file', function(filePath) {
   if (isHTML(filePath)) {
     fs.readFile(filePath, fileOptions, function(err, fileContent) {
       var $html = $.load(fileContent),
@@ -39,8 +39,8 @@ function createFolders(name) {
 function createFiles(name, css, html) {
   var indexjs = 'module.exports = { normalizeEntityName: function() {} };';
 
-  writeFile('../blueprints/spinkit-' + name + '/files/vendor/ember-cli-spinkit/templates/components/', 'spinkit-spinner', '.hbs', html);
-  writeFile('../blueprints/spinkit-' + name + '/files/vendor/ember-cli-spinkit/styles/', 'spinkit-spinner', '.css', css);
+  writeFile('../blueprints/spinkit-' + name + '/files/vendor/ember-cli-spinkit/templates/components/', 'spinkit-' + name, '.hbs', html);
+  writeFile('../blueprints/spinkit-' + name + '/files/vendor/ember-cli-spinkit/styles/', 'spinkit-' + name, '.css', css);
   writeFile('../blueprints/spinkit-' + name + '/', 'index', '.js', indexjs);
 }
 
@@ -51,7 +51,7 @@ function isHTML(file) {
 function writeFile(folder, fileName, extension, content) {
   fs.writeFile(folder + fileName + extension, content, fileOptions, function(error) {
     if (error) {
-      throw error
+      throw error;
     }
   });
 }

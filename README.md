@@ -1,6 +1,6 @@
 # ember-cli-spinkit
 
-Add a [SpinKit](https://github.com/tobiasahlin/SpinKit) loading spinner to your ember-cli project
+Add [SpinKit](https://github.com/tobiasahlin/SpinKit) loading spinners to your ember-cli project
 
 ## Install ##
 
@@ -34,8 +34,10 @@ Available Spinners [(Demo)](http://tobiasahlin.com/spinkit/)
 In your template, presumably your [loading.hbs](http://emberjs.com/guides/routing/loading-and-error-substates/), include the spinner by adding
 
 ```handlebars
-{{spinkit-spinner}}
+{{spinkit-double-bounce}}
 ```
+
+**Note**: You can have multiple spinners in your project! You are not limited to one spinner. Simply call `ember generate spinkit-<name of spinner>` multiple times.
 
 ## Color ##
 
@@ -43,4 +45,4 @@ By default the spinner color is `#333`.
 
 Check the [SpinKit project](https://github.com/tobiasahlin/SpinKit) or use your browser's inspector to see which CSS classes you should overwrite.
 
-Alternatively, change the color directly in the generated file `vendor/ember-cli-spinkit/styles/spinkit-spinner.css`.
+Alternatively, change the color directly in the generated file `vendor/ember-cli-spinkit/styles/spinkit-<name of spinner>.css`.
