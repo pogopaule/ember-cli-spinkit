@@ -1,4 +1,3 @@
-/* jshint node: true */
 'use strict';
 
 var path = require('path');
@@ -26,5 +25,5 @@ module.exports = {
     if (fs.existsSync(treePath)) {
       return this.treeGenerator(treePath);
     }
-  },
+  }
 };
