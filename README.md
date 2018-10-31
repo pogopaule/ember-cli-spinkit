@@ -1,5 +1,7 @@
 # ember-cli-spinkit
 
+![Download count all time](https://img.shields.io/npm/dt/ember-cli-spinkit.svg) [![Build Status](https://travis-ci.org/dmuneras/ember-cli-spinkit.svg?branch=master)](https://travis-ci.org/dmuneras/ember-cli-spinkit) [![Ember Observer Score](http://emberobserver.com/badges/ember-cli-spinkit.svg)](http://emberobserver.com/addons/ember-cli-spinkit) [![npm version](https://badge.fury.io/js/ember-cli-spinkit.svg)](https://badge.fury.io/js/ember-cli-spinkit)
+
 Add [SpinKit](https://github.com/tobiasahlin/SpinKit) loading spinners to your ember-cli project
 
 ## Install ##
